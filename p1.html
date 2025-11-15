@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Irhamztoy">
+    <title>Irhamztoy</title>
+    <link rel="stylesheet" href="v3/style.css">
+    <link rel="stylesheet" href="v3/1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="v3/Vid.css">
+    <style>
+        .pilem-section {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+
+        .pilem-video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .pilem-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rocial-links {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 8px 15px;
+            border-radius: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .rocial-links a {
+            color: var(--dark-grey);
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .rocial-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .rocial-links .rocial-btn {
+            background-color: var(--light-grey);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .rocial-links .rocial-btn.active {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        .rocial-links {
+            padding: 5px 10px;
+            gap: 5px;
+            font-size: 0.9em;
+        }
+
+        .rocial-links a {
+            font-size: 1em;
+        }
+
+        .rocial-links .rocial-btn {
+            padding: 3px 8px;
+            font-size: 0.8em;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <h3>🎉 welcome to irham website</h3>
+            <p>Website ini saya buat cuman untuk belajar aja ya.</p>
+            <p style="font-size: 0.9em; color: #666;">Catatan! Website ini tidak responsive terhadap tampilan desktop, karena memang dirancang di tampilan Mobile(handphone)</p>
+            <button id="close-popup">Tutup Pop-up</button>
+        </div>
+    </div
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Irhamztoy</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Omah</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Tentangku</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Jiko Oshi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio Oshi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quotes" class="nav-link">Kata Kata</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pamerwaro" class="nav-link">Pamer Waro🗿</a>
+                </li>
+                <li class="nav-item">
+                     <a href="vermot.html" class="nav-link">Back Home1</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <!/----Bagian Vidio header----/!>
+                <br>
+                <br>
+                <section class="pilem-section">
+                  <div class="pilem-video-wrapper">
+                    <video class="pilem-video" autoplay muted loop playsinline>
+                        <source src="v3/sen.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="rocial-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-at"></i></a>
+                    <div class="rocial-btn">IDN</div>
+                    <div class="rocial-btn active">SR</div>
+                  </div>
+                </section>
+                <br>
+                <br>
+                <!/----header vidio batas akhir---/!>
+                <h1 class="hero-title">Irhamztoy</h1>
+                <p class="hero-subtitle">Hobi manceng🗿</p> <!/---bisa diganti class="hero-subtitle"---atau class="irham-text"--/!>
+                <p class="hero-description">Tidak ada yang mustahil didunia ini, yang penting kita jangan menyerah, tetap semangat, jangan takut gagal, jatuh bangkit lagi , jangan lupa beribadah, berdoa, dan hormat pada orang tua, kalau ada sedikit rezeki maka sedekahkanlah.</p>
+                <a href="#portfolio" class="cta-button">Liat Profile Oshi saya</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2 class="section-title">Tentangku</h2>
+                    <p class="about-description">
+                      Halo temen temen, perkenalkan nama saya muhamad irham kurniawan, saya sekolah di smk muhammadiyah belitang, saya berumur 17 tahun, saya bercita cita ingin menjadi orang yang bermanfaat bagi orang lain dan sukses didunia dan akhirat
+                    </p>
+                    <p class="about-description">
+                        Website ini saya bikin buat belajar aja, saya juga masih belajar tentang mengembangkan website, ngoding itu seru loh
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Punya kemauan</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Niat dan doa</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Ridho Ortu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="v3/11.png"  alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!== Bagian first Vidio Pamer waro==>
+    <br>
+    <br>
+    <section id="pamerwaro">
+    <div class="pembungkus-responsif">
+      <div class="video-containerr">
+        <h1 class="lll">🎬 Video Portfolio</h1>
+        <p class="lll">Pamer waro dulu gak sih🗿</p>
+        
+        <video id="portfolioVideoo" autoplay loop controls>
+            <source src="v3/pamerwaro.mp4" type="video/mp4">
+        </video>
+        <div class="info-boxx">
+            Warning!! video mengandung unsur waro member🗿
+        </div>
+        
+        <br>
+        
+        <video id="portfolioVideoo" autoplay loop controls>
+          <source src="v3/fansfar1.mp4" type="video/mp4">
+        </video>
+        <div class="info-boxx">
+          When yes 2s ama ketemu oshi😓, nasib jadi fans far dah🥲.
+        </div>
+      </div>
+    </div>
+    </section>
+    <!== Bagian end Vidio Pamer waro==>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title fade-in">Kenalin oshi gua nih🗿</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🐟</div>
+                    <h3 class="skill-title">Christy</h3>
+                    <p class="skill-description">Peduli dan berbaik hati siapakah dia? christy</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🦕</div>
+                    <h3 class="skill-title">Lily</h3>
+                    <p class="skill-description">Papipapipum! aku akan mengejutkanmu dengan kalau, halo semua aku Lily</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📸</div>
+                    <h3 class="skill-title">Mikaela</h3>
+                    <p class="skill-description">Camera roll action, sutradara yang akan mewarnai kisah hidupmu dengan Penuh warna, hai aku Mikaela</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">️🐣</div>
+                    <h3 class="skill-title">Erine</h3>
+                    <p class="skill-description">Hadir dengan seribu kejutan, checkmate! siapa memenangkan hatimu, halo semua aku erine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title fade-in">Kenal Lebih dekat tentang oshi gw</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters fade-in">
+                <button class="filter-btn" data-filter="christy">Christy</button>
+                <button class="filter-btn" data-filter="lily">Lily</button>
+                <button class="filter-btn" data-filter="mikaela">Mikaela</button>
+                <button class="filter-btn" data-filter="erine">Erine</button>
+                <button class="filter-btn active" data-filter="all">All Member</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in" data-category="christy">
+                    <div class="portfolio-image">
+                        <img src="v3/10.png" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <a href="christygalery.html" class="portfolio-link" aria-label="View E-commerce Platform project">Christy Galery</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Angelina Christy</h3>
+                        <p class="portfolio-description">Peduli dan berbaik hati siapakah dia? christy</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Gen7</span>
+                            <span class="tag">Jkt48</span>
+                            <span class="tag">Oshi 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="lily">
+                    <div class="portfolio-image">
+                        <img src="v3/9.png" alt="Fitness Mobile App">
+                        <div class="portfolio-overlay">
+                            <a href="lilygalery.html" class="portfolio-link" aria-label="View Fitness Mobile App project">Lily Galery</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Hillary Abigail</h3>
+                        <p class="portfolio-description">Papipapipum! aku akan mengejutkanmu dengan kehebatanku, hai aku lily.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Gen12</span>
+                            <span class="tag">JKT48</span>
+                            <span class="tag">oshi 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="mikaela">
+                    <div class="portfolio-image">
+                        <img src="v3/8.png" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Brand Identity Design project">Mikaela Galery</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Mikaela Kusjanto</h3>
+                        <p class="portfolio-description">Camera roll action! sutradara yang akan mewarnai kisah hidupmu dengan penuh warna, hai aku mikaela.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Gen13</span>
+                            <span class="tag">JKT48</span>
+                            <span class="tag">Oshi 3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="erine">
+                    <div class="portfolio-image">
+                        <img src="v3/7.jpg" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Corporate Website project">Erine Galery</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Catherina Vallencia kurniawan</h3>
+                        <p class="portfolio-description">Hadir dengan seribu kejutan, checkmate! siapa memenangkan hatimu, halo semua aku erine</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Gen12</span>
+                            <span class="tag">JKT48</span>
+                            <span class="tag">Oshi 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="quotes" class="quotes section">
+        <div class="container">
+            <h2 class="section-title fade-in">Kata Kata hari ini</h2>
+            <div class="quotes-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Apakah ini ujian dari Tuhan, Mengapa sulit sekali..?, Sekalinya jatuh cinta dapatnya yang beda agama"</p>
+                        <div class="testimonial-author">
+                            <img src="v3/hj.png" alt="Irhamztoy" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">Irhamztoy</h4>
+                                <p class="author-title">Jangan ambil dia dari Tuhannya</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-links" id="ms1play" onclick="ms1sound()">Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Jika tidak dengannya, maka tidak dengan yang lain."</p>
+                        <div class="testimonial-author">
+                            <img src="v3/hj.png" alt="Michael Chen" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">Irhamztoy</h4>
+                                <p class="author-title">SuratCintaUntukStarla.</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-links" id="msPlay" onclick="msSound()">Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h2 class="section-title">Ngepo ni aku🗿</h2>
+                    <p class="contact-description">
+                        Jane aku arep jujur tapi males yo tapi yo kan asline yo ra asli asli tapi asline asli to la pie
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@yourname.com" class="contact-link">www.wedos.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+1234567890" class="contact-link">081508161819</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Lokasine</span>
+                            <span class="contact-text">Neng ndeso bos</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                        <a href="#" class="social-link" aria-label="Dribbble">Dribbble</a>
+                        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Elemen audio -->
+    <audio id="myAudio" src="v3/scus.mp3" preload="auto"></audio>
+    <audio id="my1play" src="v3/mangu.m4a" preload="auto"></audio>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-text">&copy; 2025 Irhamztoy. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="#home" class="footer-link">Omah</a>
+                        <a href="#about" class="footer-link">Tentangku</a>
+                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                        <a href="#contact" class="footer-link">Kontak</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="v3/script.js"></script>
+    <script src="v3/1.js"></script>
+    
+  <!-- Script -->
+  <script>
+    var isPlaying = false;
+
+    function msSound() {
+      var audio = document.getElementById("myAudio");
+      var button = document.getElementById("msPlay");
+
+      if (!isPlaying) {
+        audio.play();
+        button.textContent = "Stop";
+        isPlaying = true;
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        button.textContent = "Putar";
+        isPlaying = false;
+      }
+
+      // Reset tombol jika audio selesai otomatis
+      audio.onended = function() {
+        button.textContent = "Putar";
+        isPlaying = false;
+      };
+    }
+  </script>
+  
+  <!-- Script mangu -->
+  <script>
+    var isPlaying = false;
+
+    function ms1sound() {
+      var audio = document.getElementById("my1play");
+      var button = document.getElementById("ms1play");
+
+      if (!isPlaying) {
+        audio.play();
+        button.textContent = "Stop";
+        isPlaying = true;
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        button.textContent = "Putar";
+        isPlaying = false;
+      }
+
+      // Reset tombol jika audio selesai otomatis
+      audio.onended = function() {
+        button.textContent = "Putar";
+        isPlaying = false;
+      };
+    }
+  </script>
+</body>
+</html>
