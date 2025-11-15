@@ -1,0 +1,117 @@
+        .video-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Atur ukuran video agar responsif */
+        #portfolioVideo {
+            width: 100%;
+            height: auto;
+            display: block; /* Menghilangkan margin di bawah video */
+        }
+
+        .info-box {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border: 1px solid #b2ebf2;
+            color: #00796b;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .ll {
+            text-align: center;
+        }
+        
+        
+    ====================================================
+    PENGATURAN UMUM UNTUK MOBILE-FIRST
+    ====================================================
+    */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f0f3f5; /* Latar belakang ringan untuk mobile */
+    }
+
+    .pembungkus-responsif {
+      /* Tidak perlu batasan lebar di sini, biarkan 100% */
+      width: 100%;
+      min-height: 100vh; /* Agar konten mengisi tinggi layar */
+    }
+
+    .video-containerr {
+        /* Hapus max-width untuk memastikan konten memenuhi lebar mobile */
+        width: 100%;
+        margin: 0; /* Hapus margin horizontal agar menempel di tepi layar */
+        background-color: #fff;
+        padding: 10px 0; /* Padding vertikal sedikit, horizontal nol */
+        box-shadow: none; /* Hapus bayangan agar terlihat seperti aplikasi */
+    }
+
+    /* Atur ukuran video agar responsif dan memenuhi lebar kontainer */
+    #portfolioVideoo {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* Tambahkan margin vertikal untuk memisahkan antar video */
+        margin: 10px 0;
+    }
+
+    .lll {
+        text-align: center;
+        padding: 0 15px; /* Tambahkan padding agar teks tidak menempel di tepi */
+    }
+
+    .video-containerr h1 {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        color: #334466;
+    }
+
+    .video-containerr p {
+        font-size: 1em;
+        margin-top: 0;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .info-boxx {
+        margin: 15px 15px; /* Tambahkan margin horizontal agar tidak menempel di tepi */
+        padding: 10px;
+        background-color: #e0f7fa; /* Warna peringatan yang lebih kuat */
+        border: 1px solid #b2ebf2;
+        color: #00796b;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    /*
+    ====================================================
+    MEDIA QUERY (OPSIONAL): SEMBUNYIKAN DI LAYAR BESAR
+    ====================================================
+    */
+    @media (min-width: 601px) {
+        .pembungkus-responsif {
+            display: none; /* Sembunyikan konten jika layar terlalu lebar */
+        }
+        body {
+             background-color: #263238;
+             text-align: center;
+             padding: 50px;
+        }
+        body::before {
+            content: "⚠️ Konten ini DKHUSUSKAN untuk tampilan perangkat mobile. Silakan buka dari ponsel Anda.";
+            display: block;
+            font-size: 1.5em;
+            color: #ffcc80;
+            margin-top: 50px;
+        }
+    }

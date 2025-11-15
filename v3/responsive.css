@@ -1,0 +1,20 @@
+/* 🚀 Media Query untuk Tampilan Mobile */
+
+/* Gaya ini akan diterapkan ketika lebar layar KURANG DARI atau SAMA DENGAN 600px */
+@media screen and (max-width: 600px) {
+    
+    .pembungkus-responsif {
+        /* Di mobile, gunakan lebar penuh (95% atau 100%) */
+        width: 95%; 
+        padding: 15px;
+        margin: 0 auto; /* Memastikan tetap di tengah */
+        box-shadow: none; /* Menghilangkan bayangan agar lebih ringan di mobile */
+        border-radius: 0;
+    }
+ 
+    .konten-tambahan {
+        /* Contoh: Mengubah ukuran teks atau margin khusus untuk mobile */
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+}
